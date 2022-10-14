@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="./user_data.php" method="POST">
+        <label for="name">Name: <input type="text" name="name" id="name" required></label>
+        <label for="email">Email: <input type="email" name="email" id="email" required></label>
+        <label for="dob">Date of Birth: <input type="date" name="dob" id="dob" required></label>
+        <label for="male female">Gender: 
+            <label for="male"><input type="radio" value="male" name="gender" id="male">Male</label>
+            <label for="female"><input type="radio" value="female" name="gender" id="female">Female</label>
+        </label>
+        <label for="country">Country: <input type="text" name="country" id="country" required></label>
+        <input type="submit" value="Submit" id="submit" name="submit">
+    </form>
+</body>
+</html>
